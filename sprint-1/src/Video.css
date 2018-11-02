@@ -1,13 +1,91 @@
+figcaption {
+  text-align: left;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 1.5em;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: .2em;
+  text-align: left;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+ul {
+  padding: 0;
+  margin-left: .2em;
+  list-style-type: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .player {
-  width: 70vw;
+  width: 58vw;
   height: 40vw;
   -webkit-box-flex: 2.5;
       -ms-flex-positive: 2.5;
           flex-grow: 2.5;
+  margin: 0;
+  -o-object-position: top left;
+     object-position: top left;
 }
 
-figcaption {
-  text-align: left;
-  font-size: 1.5em;
+.video-figure {
+  margin: 2em 0;
+}
+
+.card-figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-list {
+  margin: 2em 0;
+  margin-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-container {
+  width: 100%;
+}
+
+.card-ul {
+  margin-top: 0;
+}
+
+.card-image {
+  height: auto;
+  width: 45%;
+}
+
+.card-image__title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card-image__channel {
+  font-size: 0.72rem;
+  color: #888888;
+  margin: 0.6em 0;
+}
+
+.card-image__views {
+  font-size: 0.72rem;
+  color: #888888;
+  margin: 0.6em 0;
 }
 /*# sourceMappingURL=Video.css.map */

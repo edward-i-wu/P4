@@ -1,9 +1,78 @@
-.player{
-    width: 70vw;
-    height:40vw;
-    flex-grow:2.5;
-}
+$cardtitle-font: .8rem;
+$cardchannel-font: $cardtitle-font*.9;
+$cardviews-font: $cardtitle-font*.9;
+$lightgrey-view: #888888;
+$li-item-margin: 0.6em 0;
+
 figcaption{
     text-align: left;
+    align-self: flex-start;
     font-size:1.5em;
+}
+h4{
+    margin-top:0;
+    margin-bottom:.2em;
+    text-align:left;
+}
+figure{
+    margin:1em 0;
+}
+
+ul{
+    padding:0;
+    margin-left:.2em;
+    list-style-type: none;
+    align-self: flex-start;
+}
+
+.player{
+    width: 58vw;
+    height:40vw;
+    flex-grow:2.5;
+    margin:0;
+    object-position: top left; 
+}
+
+.video-figure{
+    margin: 2em 0; 
+}
+
+.card-figure{
+    display:flex; 
+    align-items: center;
+}
+
+.card-list{
+    margin: 2em 0; 
+    margin-left:1em;
+    display:flex;
+    flex-direction: column;
+}
+
+.card-container{
+    width:100%;
+}
+.card-ul{
+    margin-top:0;
+   
+}
+
+.card-image{
+    height:  auto;
+    width:45%;
+    
+    &__title{
+        font-size: $cardtitle-font;
+        font-weight:bold;
+    }
+    &__channel{
+        font-size: $cardchannel-font;
+        color:$lightgrey-view;
+        margin: $li-item-margin;
+    }
+    &__views{
+        font-size: $cardviews-font;
+        color:$lightgrey-view;
+        margin: $li-item-margin;
+    }
 }

@@ -4,6 +4,13 @@ $circle-height: $header-height*(6/5);
 $logo-height: $header-height*(6/5);
 $search-border: 1px solid #D4d4d4;
 
+@mixin marginFormat {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+
 body{
     margin:0; 
     width:100%;
@@ -18,11 +25,13 @@ form{
     height:$header-height;
 }
 
+.margin{
+    width:85%;
+    @include marginFormat();
+}
+
 .header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin:0 auto;
+    @include marginFormat();
     margin-top:1em;
     height: 8vh;
 }
@@ -96,13 +105,12 @@ form{
     flex-grow: 1.5;
 }
 
-.margin{
-    width:85%;
-}
+
 
 .video-container{
     display:flex;
     justify-content: flex-start;
+    align-items:start;
 }
 
 .upload{
