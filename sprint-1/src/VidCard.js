@@ -7,7 +7,10 @@ class VidCard extends Component{
         return (
    
             <figure className="card card-figure">
-                <div className="card-container"><img className="card-container__image" src={`${videoCard.imgSrc}`} /></div>
+                <div className="card-container">
+                    <img className="card-container__image" src={`${videoCard.imgSrc}`} />
+                    <div className="card-container__length">{videoCard.length} </div>
+                </div>
                 <figcaption>
                     <ul className="card-ul">
                         <li className="card-ul__title">{videoCard.title}</li>

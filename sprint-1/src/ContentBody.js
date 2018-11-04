@@ -15,6 +15,7 @@ function vid(title,pubdate,description,channel, views,comments,imgSrc){
     this.imgSrc = imgSrc;
     //hardcoded for now
     this.vidSrc = "./Assets/Brainstation Sample Video.mp4";
+    this.length='4:45';
 }
 
 
@@ -41,6 +42,16 @@ class ContentBody extends Component{
         "MLB","1.1M views",["wow","ye-haw"],"./Assets/Images/Big-Read-Vladimir-Guerrero-Jr-Swings-470x264.jpg"));
         vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
         "MLB","1.1M views", ["wow","ye-haw"] ,"./Assets/Images/donaldson.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views", ["wow","ye-haw"] ,"./Assets/Images/hqdefault.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views", ["wow","ye-haw"] ,"./Assets/Images/maxresdefault.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views", ["wow","ye-haw"] ,"./Assets/Images/PR6AGOQ7XREI5B7UMKM3KAGWFA.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views", ["wow","ye-haw"] ,"./Assets/Images/r241851_600x400_3-2.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views", ["wow","ye-haw"] ,"./Assets/Images/THKMOYWFLWJCPXQ.20170430201114.jpg"));
 
         
         //index of current video

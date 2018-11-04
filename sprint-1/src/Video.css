@@ -79,14 +79,26 @@ ul {
 .card-container {
   width: 100%;
   overflow: hidden;
+  text-align: left;
+  position: relative;
 }
 
 .card-container__image {
-  width: 12vw;
+  width: 15vw;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: -10% -10%;
      object-position: -10% -10%;
+}
+
+.card-container__length {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  z-index: 1;
+  background-color: #000000;
+  opacity: .75;
+  color: #ffffff;
 }
 
 .card-list {
