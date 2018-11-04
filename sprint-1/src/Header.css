@@ -81,38 +81,61 @@ form {
   right: -28%;
 }
 
+.header-divider {
+  -webkit-box-shadow: 0 5px 3px #F8F8F8;
+          box-shadow: 0 5px 3px #F8F8F8;
+  height: 4px;
+}
+
 .search {
   padding-top: .4em;
   padding-bottom: .4em;
 }
 
 .searchInput {
-  width: 60%;
+  width: 30%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  fill: #FFFFFF;
+  fill: #F8F8F8;
   border: 1px solid #D4d4d4;
   border-radius: 2px;
   -webkit-box-flex: 2.5;
       -ms-flex-positive: 2.5;
           flex-grow: 2.5;
   font-size: 1.2em;
+  text-indent: 1.8em;
 }
 
 .searchInput::-webkit-input-placeholder {
-  color: lightgray;
+  color: #b6b4b4;
 }
 
 .searchInput:-ms-input-placeholder {
-  color: lightgray;
+  color: #b6b4b4;
 }
 
 .searchInput::-ms-input-placeholder {
-  color: lightgray;
+  color: #b6b4b4;
 }
 
 .searchInput::placeholder {
-  color: lightgray;
+  color: #b6b4b4;
+}
+
+.searchInput:focus::-webkit-input-placeholder {
+  color: #111111;
+}
+
+.searchInput:focus:-ms-input-placeholder {
+  color: #111111;
+}
+
+.searchInput:focus::-ms-input-placeholder {
+  color: #111111;
+}
+
+.searchInput:focus::placeholder {
+  color: #111111;
 }
 
 .searchButton {

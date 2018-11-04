@@ -64,6 +64,15 @@ form{
     right:-28%;
 }
 
+.header-divider{
+    box-shadow: 0 5px 3px #F8F8F8;
+    height:4px;
+}
+
+.player__title{
+
+}
+
 .search{
     padding-top:.4em;
     padding-bottom:.4em;
@@ -71,17 +80,21 @@ form{
 
 .searchInput{
     // height: $search-height;
-    width:60%;
+    width:30%;
     box-sizing: border-box;
-    fill: #FFFFFF;
+    fill: #F8F8F8;
     border:$search-border;
     border-radius: 2px;
     flex-grow:2.5;
     font-size:1.2em;
+    text-indent:1.8em;
 }
 
 .searchInput::placeholder{
-    color: lightgray;
+    color: #b6b4b4;
+}
+.searchInput:focus::placeholder{
+        color:#111111 ;
 }
 
 .searchButton{
@@ -112,6 +125,7 @@ form{
     justify-content: flex-start;
     align-items:start;
 }
+
 
 .upload{
     margin-right:3em;

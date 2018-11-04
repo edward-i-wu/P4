@@ -1,0 +1,32 @@
+.channel-info{
+    display:flex;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    padding:1.2em 0;
+}
+
+.channel-text{
+    width:100%;
+    text-align: left;
+    &__name{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:3em;
+    }
+    ul{
+        text-align:left;
+    }
+    &__subbutton{
+        border-radius: 2px;   
+        background-color: #0095FF;
+        color:#FFFFFF;
+        border:none;
+        font-size:1em;
+        padding:1em;
+        span{
+            color:#d4d4d4;
+        }
+        
+    }
+}

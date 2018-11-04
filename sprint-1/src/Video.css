@@ -12,7 +12,16 @@ h4 {
 }
 
 figure {
-  margin: 1em 0;
+  width: 100%;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  text-align: unset;
 }
 
 ul {
@@ -25,26 +34,59 @@ ul {
 
 .player {
   width: 58vw;
-  height: 40vw;
+  height: auto;
   -webkit-box-flex: 2.5;
       -ms-flex-positive: 2.5;
           flex-grow: 2.5;
   margin: 0;
-  -o-object-position: top left;
-     object-position: top left;
 }
 
 .video-figure {
   margin: 2em 0;
 }
 
+.vid-review {
+  margin-top: .6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .8em;
+}
+
+.vid-review__opinions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .65em;
+}
+
+.vid-review__opinions div {
+  margin-left: 1.5em;
+}
+
 .card-figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.card-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-container__image {
+  width: 12vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -10% -10%;
+     object-position: -10% -10%;
 }
 
 .card-list {
@@ -59,31 +101,33 @@ ul {
           flex-direction: column;
 }
 
-.card-container {
+.card {
   width: 100%;
+  height: 17vh;
+  margin: .5em 0;
 }
 
 .card-ul {
   margin-top: 0;
 }
 
-.card-image {
-  height: auto;
-  width: 45%;
+.card-ul {
+  height: 13vh;
+  width: 100%;
 }
 
-.card-image__title {
+.card-ul__title {
   font-size: 0.8rem;
   font-weight: bold;
 }
 
-.card-image__channel {
+.card-ul__channel {
   font-size: 0.72rem;
   color: #888888;
   margin: 0.6em 0;
 }
 
-.card-image__views {
+.card-ul__views {
   font-size: 0.72rem;
   color: #888888;
   margin: 0.6em 0;

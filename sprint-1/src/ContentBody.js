@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 import Video from "./Video";
 import VidList from "./VidList";
 
-function vid(title,channel, views,comments,imgSrc){
+function vid(title,pubdate,description,channel, views,comments,imgSrc){
     this.title = title;
     this.channel=channel;
+    this.pubdate=pubdate;
+    this.description=description;   
     this.views= views;
+    this.subs="1.2M";
     this.comments=comments;
+    this.likes="6.9K"; 
+    this.dislikes= "202";
     this.imgSrc = imgSrc;
+    //hardcoded for now
+    this.vidSrc = "./Assets/Brainstation Sample Video.mp4";
 }
 
 
@@ -22,18 +29,27 @@ class ContentBody extends Component{
         let vidArray=[];
 
         //hardcoded data
-        let vid1= new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",
-                        "MLB","1.1M views",["wow","ye-haw"],"./Assets/Images/920x920.jpg");
+        vidArray.push( new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning","Oct 14, 2015", "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+                        "MLB","1.1M views", ["wow","ye-haw"], "./Assets/Images/920x920.jpg"));
+        vidArray.push(new vid("Jose Bautista hammers go-ahead three-run shot in ALDS Game 5, delivers epic bat flip","Oct 14, 2015", "10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","2,304,189 views",["wow","ye-haw"],"./Assets/Images/maxresdefault.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning",  "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views",["wow","ye-haw"],"./Assets/Images/american-league-wild-card-game---minnesota-twins-v-new-york-yankees-8119099224ebf5b5.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views",["wow","ye-haw"],"./Assets/Images/BASEBALL-MLB-HOU-LAD-.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views",["wow","ye-haw"],"./Assets/Images/Big-Read-Vladimir-Guerrero-Jr-Swings-470x264.jpg"));
+        vidArray.push(new vid("TEX @ TOR Gm5: Blue Jays take lead in wild 7th inning", "Oct 14, 2015","10/14/15: Jose Bautista crushes a long go-ahead three-run homer in the 7th inning of ALDS Game 5",
+        "MLB","1.1M views", ["wow","ye-haw"] ,"./Assets/Images/donaldson.jpg"));
 
-        vidArray.push(vid1);
+        
         //index of current video
-        let currentVid = Math.round(Math.random()*8);
-        currentVid = vidArray[currentVid];
-        vidArray = vidArray.filter((item,i)=> i!==currentVid);
+        let currentVid = 1;
+        let current = vidArray.splice(currentVid,1);
 //
         return(
             <div className="video-container margin">
-                <Video current={currentVid}></Video>
+                <Video current={current[0]}></Video>
                 <VidList vidArray={vidArray}></VidList>
             </div>
         );

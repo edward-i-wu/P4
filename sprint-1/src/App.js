@@ -11,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header></Header>
+        <div className="header-divider"></div>
         <ContentBody/>
       </div>
     );
