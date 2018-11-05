@@ -7,6 +7,21 @@
   padding: 1.2em 0;
 }
 
+.channel-info__circleCrop {
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
+  width: 9.6vh;
+  height: 9.6vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.channel-info__circleCrop--circleImg {
+  height: 8.64vh;
+  position: absolute;
+  right: -28%;
+}
+
 .channel-text {
   width: 100%;
   text-align: left;

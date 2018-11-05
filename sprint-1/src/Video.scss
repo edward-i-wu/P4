@@ -70,8 +70,6 @@ ul{
     &__image{
         width:15vw;
         object-fit: cover;
-        object-position:-10% -10%;
-        
     }
     &__length{
         position:absolute;
@@ -81,6 +79,7 @@ ul{
         background-color:#000000;
         opacity: .75;
         color:#ffffff;
+        font-size:.9em;
     }
 }
 
@@ -118,4 +117,34 @@ ul{
         color:$lightgrey-view;
         margin: $li-item-margin;
     }
+}
+
+@media screen and (max-width:1400px){
+    html{
+        font-size:15px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .card-container{
+        &__image{
+            width: 12vw;
+        }
+    }
+
+}
+@media screen and (max-width: 768px){
+    .video-container{
+        flex-direction: column;
+    }
+    .player{
+        width:85vw;
+    }
+    .card-container{
+        width:40%;
+        &__image{
+            width: 21vw;
+        }
+    }
+   
 }

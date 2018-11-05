@@ -1,8 +1,27 @@
+$header-height: 8vh;
+$circle-height: $header-height*(6/5);
+
 .channel-info{
     display:flex;
     border-top: 1px solid #d4d4d4;
     border-bottom: 1px solid #d4d4d4;
     padding:1.2em 0;
+
+    &__circleCrop{
+        clip-path: circle(40%);
+        width:$circle-height;
+        height:$circle-height;
+        position: relative;
+        overflow: hidden;
+
+        &--circleImg{
+            height:$circle-height * 9/10;
+            position:absolute;
+            right:-28%;
+        }
+    }
+
+
 }
 
 .channel-text{

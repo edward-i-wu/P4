@@ -9,7 +9,7 @@ class Header extends Component{
     render(){
         return(
             <header className={"header margin"}>
-                    <img className={"header__logo"} src="./Assets/Icons/BrainFlix Logo.svg" datatype="svg"/>
+                    <img className={"header__logo"} src="./Assets/Icons/BrainFlix Logo.svg"/>
                     <Search/>
                     <HeaderRight />
             </header>

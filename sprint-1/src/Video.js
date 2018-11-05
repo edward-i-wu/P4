@@ -8,7 +8,7 @@ class Video extends Component{
     render(){
         let {current}=this.props;
         return (
-            <div>
+            <div className="video">
                 <figure className="video-figure">
                     <video className="player" controls src={'./Assets/Brainstation Sample Video.mp4'}></video>
                     <figcaption className="player__title">{current.title}</figcaption>

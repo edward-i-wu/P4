@@ -9,7 +9,7 @@ import ContentBody from './ContentBody.js';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Header></Header>
         <div className="header-divider"></div>
         <ContentBody/>

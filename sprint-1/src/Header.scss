@@ -1,4 +1,4 @@
-$header-height: 7.5vh;
+$header-height: 8vh;
 $search-height: $header-height * (4/5);
 $circle-height: $header-height*(6/5);
 $logo-height: $header-height*(6/5);
@@ -11,6 +11,15 @@ $search-border: 1px solid #D4d4d4;
     margin:0 auto;
 }
 
+@mixin circleCrop {
+    clip-path: circle(40%);
+        
+    width:$circle-height;
+    height:$circle-height;
+    position: relative;
+    overflow: hidden;
+}
+
 body{
     margin:0; 
     width:100%;
@@ -21,9 +30,7 @@ form{
     width:100%;
 }
 
-.header, .logo, .circleCrop, .circleImg{
-    height:$header-height;
-}
+
 
 .margin{
     width:85%;
@@ -33,7 +40,7 @@ form{
 .header{
     @include marginFormat();
     margin-top:1em;
-    height: 8vh;
+    height: $header-height;
 }
 
 .headerRight{
@@ -41,6 +48,21 @@ form{
     justify-content: flex-end;
     margin-left:5em;
     flex-grow:1;
+
+    &__upload{
+        margin-right:3em;
+    }
+
+    &__circleCrop{
+        @include circleCrop();
+
+        &--circleImg{
+            height:$circle-height * 9/10;
+            position:absolute;
+            right:-28%;
+        }
+    }
+
 }
 
 .header__logo{
@@ -50,19 +72,8 @@ form{
     margin-right: 7em;
 }
 
-.circleCrop{
-    clip-path: circle(40%);
-    
-    width:$circle-height;
-    height:$circle-height;
-    position: relative;
-    overflow: hidden;
-}
-.circleImg{
-    height:$circle-height * 9/10;
-    position:absolute;
-    right:-28%;
-}
+
+
 
 .header-divider{
     box-shadow: 0 5px 3px #F8F8F8;
@@ -127,6 +138,4 @@ form{
 }
 
 
-.upload{
-    margin-right:3em;
-}
+

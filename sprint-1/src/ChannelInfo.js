@@ -7,8 +7,8 @@ class ChannelInfo extends Component{
         let {name,pubdate,description,subs}=this.props;
         return (
             <div className={'channel-info'}>
-                <div className={'circleCrop'}>
-                    <img className={"circleImg"} src='./Assets/Images/john_gibbons.jpg'/>
+                <div className={'channel-info__circleCrop'}>
+                    <img className={"channel-info__circleCrop--circleImg"} src='./Assets/Images/john_gibbons.jpg'/>
                 </div>
                 <div className={'channel-text'}>
                     <div className={'channel-text__name'}>
