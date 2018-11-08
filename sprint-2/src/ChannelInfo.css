@@ -1,0 +1,59 @@
+.channel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 1.2em 0;
+}
+
+.channel-info__circleCrop {
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
+  width: 9.6vh;
+  height: 9.6vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.channel-info__circleCrop--circleImg {
+  height: 8.64vh;
+  position: absolute;
+  right: -28%;
+}
+
+.channel-text {
+  width: 100%;
+  text-align: left;
+}
+
+.channel-text__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3em;
+}
+
+.channel-text ul {
+  text-align: left;
+}
+
+.channel-text__subbutton {
+  border-radius: 2px;
+  background-color: #0095FF;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1em;
+  padding: 1em;
+}
+
+.channel-text__subbutton span {
+  color: #d4d4d4;
+}
+/*# sourceMappingURL=ChannelInfo.css.map */
