@@ -13,7 +13,6 @@ $search-border: 1px solid #D4d4d4;
 
 @mixin circleCrop {
     clip-path: circle(40%);
-        
     width:$circle-height;
     height:$circle-height;
     position: relative;

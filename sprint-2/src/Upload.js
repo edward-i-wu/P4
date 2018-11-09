@@ -7,12 +7,12 @@ export default class UploadVid extends Component {
       <div className="upload-background margin">
         <div className="uploadImage">
             {/* <img className="upload" src="./Assets/Icons/Large Upload.svg"/> */}
-            <form>
-                <ul>
+            <form className="uploadForm">
+                <ul className="ulListForm">
                     <li>Title:</li>
-                    <input className="title"></input>
+                    <input className="title" size='30'></input>
                     <li>Description:</li>
-                    <textarea className="description"></textarea>
+                    <textarea rows="9" cols="100" className="description"></textarea>
                 </ul>
                 <button className="pub-button">Publish</button>
             </form>

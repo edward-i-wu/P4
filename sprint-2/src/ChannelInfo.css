@@ -5,19 +5,20 @@
   border-top: 1px solid #d4d4d4;
   border-bottom: 1px solid #d4d4d4;
   padding: 1.2em 0;
+  margin-bottom: 3em;
 }
 
 .channel-info__circleCrop {
   -webkit-clip-path: circle(40%);
           clip-path: circle(40%);
-  width: 9.6vh;
-  height: 9.6vh;
+  width: 12vh;
+  height: 12vh;
   position: relative;
   overflow: hidden;
 }
 
 .channel-info__circleCrop--circleImg {
-  height: 8.64vh;
+  height: 10.8vh;
   position: absolute;
   right: -28%;
 }

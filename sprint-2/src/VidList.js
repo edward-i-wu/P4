@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const api_key = '?api_key=fac7d278-2d40-4d95-bd4f-146400d00a5c';
 const baseURL = 'https://project-2-api.herokuapp.com/';
 //
-const videos = 'videos/';
+const video = 'video/';
 class VidList extends Component{ 
     
     render(){

@@ -20,8 +20,8 @@ class App extends Component {
       <div className="App">
         <Header></Header>
         <Switch>
-          <Route path='/' exact component={ContentBody}></Route>
-          <Route path='/video/:vidId' exact component={ContentBody}></Route>
+          <Route path='/' exact render={()=><Redirect to='/video/'></Redirect>}></Route> 
+          <Route path='/video/:vidId?'  component={ContentBody}></Route>
           <Route path='/upload' component={Upload}></Route>
         </Switch>
       </div>

@@ -18,7 +18,7 @@ class Video extends Component{
                 <figcaption> <PlayerInfo likes={current.thumbsUp} dislikes={current.thumbsDown} views={current.views}/> </figcaption>
             </figure>
             <ChannelInfo subs={current.subscriberCount} name={current.channel} pubdate={new Date(current.timestamp)} description={current.description}/>
-            {/* <CommentsSection comments={this.current.comments}></CommentsSection> */}
+            <CommentsSection comments={current.comments}></CommentsSection>
             </div>
         }else{
             page= <div className="video"></div>

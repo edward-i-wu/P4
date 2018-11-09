@@ -28,7 +28,7 @@ class ContentBody extends Component{
         fetch(`${baseURL}${videos}${api_key}`).then(res=> 
             res.json()).then(res=>this.setState({vidArray:res})
             );
-        let defaultVid;
+      
         
         if(match.params.vidId){
             this.updateVideo(match.params.vidId);
@@ -47,13 +47,7 @@ class ContentBody extends Component{
                                 });
     }
     
-    render(){
-
-        //fetch 
-        console.log("renderCB");
-        
-       
-        
+    render(){        
         return(
             //insert the current vid afterwards
             <div className="video-container margin" >
