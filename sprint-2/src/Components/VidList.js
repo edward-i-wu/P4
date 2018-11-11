@@ -11,7 +11,7 @@ class VidList extends Component{
         let { vidArray,current} = this.props;
         
         let cards = vidArray.map((item)=>{ if(current.id!==item.id){
-                            return <Link to={`${item.id}${api_key}`}> 
+                            return <Link key={item.id} to={`${item.id}${api_key}`}> 
                                         <VidCard videoCard={item} {...this.props}/>
                                     </Link>
                             }});

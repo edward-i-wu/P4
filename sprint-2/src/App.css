@@ -1,4 +1,8 @@
-
+@font-face{
+  font-family: 'Roboto';
+  font-weight: 400 700;
+  src: url("https://fonts.googleapis.com/css?family=Roboto:400,500,700" );
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -17,6 +21,7 @@
 }
 .App{
   height:140vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-link {

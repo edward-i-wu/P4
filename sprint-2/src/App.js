@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
-import Header from './Header.js';
-import Video from './Video';
-import VidList from './VidList';
-import ContentBody from './ContentBody.js';
-import Upload from './Upload.js';
+import Header from './Components/Header.js';
+
+import ContentBody from './Components/ContentBody.js';
+import Upload from './Components/Upload.js';
 
 
 

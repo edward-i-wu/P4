@@ -12,7 +12,7 @@ export default class CommentsSection extends Component {
     console.log("comment-section");
 
     if(comments){
-        renderedComments= comments.map(item=>{return <Comment comment={item}/>});
+        renderedComments= comments.map(item=>{return <Comment key={item.id} comment={item}/>});
     }
 
     return (

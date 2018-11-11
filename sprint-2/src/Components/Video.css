@@ -170,7 +170,7 @@ ul {
 
 @media screen and (max-width: 1024px) {
   .card-container__image {
-    width: 12vw;
+    width: 18vw;
   }
 }
 
@@ -180,15 +180,36 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .margin {
+    width: 100%;
   }
   .player {
     width: 85vw;
   }
+  .card {
+    min-height: 115px;
+    overflow: hidden;
+  }
+  .header__logo {
+    margin-right: 2em;
+    max-width: 13vw;
+  }
+  .headerRight {
+    margin-left: 1em;
+  }
+  .headerRight__upload {
+    margin-right: 1em;
+  }
   .card-container {
     width: 40%;
+    min-height: 115px;
   }
   .card-container__image {
-    width: 21vw;
+    width: 34vw;
   }
 }
 /*# sourceMappingURL=Video.css.map */

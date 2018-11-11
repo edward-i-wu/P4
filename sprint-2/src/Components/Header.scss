@@ -1,8 +1,11 @@
+
 $header-height: 8vh;
 $search-height: $header-height * (4/5);
 $circle-height: $header-height*(6/5);
 $logo-height: $header-height*(6/5);
 $search-border: 1px solid #D4d4d4;
+
+
 
 @mixin marginFormat {
     display:flex;
