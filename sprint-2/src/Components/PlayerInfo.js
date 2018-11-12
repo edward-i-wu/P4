@@ -6,7 +6,7 @@ class PlayerInfo extends Component{
 
         return(
             <div className="vid-review">
-                <div>{this.props.views}</div>
+                <div>{this.props.views+" views"}</div>
                 <div className="vid-review__opinions">
                     <div><img src="/Assets/Icons/Thumbs Up.svg"/> {this.props.likes}  </div>
                     <div><img src="/Assets/Icons/Thumbs Down.svg"/>  {this.props.dislikes}</div>

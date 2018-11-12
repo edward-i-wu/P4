@@ -14,7 +14,7 @@ class ChannelInfo extends Component{
                     <div className={'channel-text__name'}>
                         <ul>
                             <li>{name}</li>
-                            <li>{"Uploaded on " +pubdate}</li>
+                            <li>{"Uploaded on 04/20/2018"}</li>
                         </ul>
                         <button className="channel-text__subbutton"> SUBSCRIBE  <span>{subs}</span>  </button>
                     </div>
