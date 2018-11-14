@@ -34,10 +34,13 @@ class ContentBody extends Component{
             this.updateVideo(match.params.vidId);
         }else{
             this.updateVideo(this.state.defaultVid);
-        }
-        
-       
+        }   
     }
+
+    // componentWillReceiveProps(){
+    //     this.updateVideo(this.props.match.vidId);
+    // }
+
     //this function to update video on click
     //passed down to each VidCard to activate
     updateVideo= (newId)=>{

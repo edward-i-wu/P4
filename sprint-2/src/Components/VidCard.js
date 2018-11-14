@@ -12,7 +12,7 @@ class VidCard extends Component{
         let {videoCard}=this.props;
         return (
    
-            <figure className="card card-figure" onClick={this.switchVideo}>
+            <figure className="card card-figure" onClick={()=>this.props.newVidHandler(this.props.videoCard.id)}>
                 <div className="card-container">
                     <img className="card-container__image" src={videoCard.image} />
                     <div className="card-container__length">{videoCard.duration} </div>
