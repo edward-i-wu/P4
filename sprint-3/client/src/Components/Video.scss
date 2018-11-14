@@ -1,0 +1,187 @@
+$cardtitle-font: .8rem;
+$cardchannel-font: $cardtitle-font*.9;
+$cardviews-font: $cardtitle-font*.9;
+$lightgrey-view: #888888;
+$li-item-margin: 0.6em 0;
+
+figcaption{
+    text-align: left;
+    align-self: flex-start;
+    font-size:1.5em;
+    width:45%;
+}
+h4{
+    margin-top:0;
+    margin-bottom:.2em;
+    text-align:left;
+}
+figure{
+    width:100%;
+    //get rid of figure defaults
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-align: unset;
+}
+
+ul{
+    padding:0;
+    margin-left:.2em;
+    list-style-type: none;
+    align-self: flex-start;
+}
+
+.player{
+    width: 58vw;
+    height:auto;
+    flex-grow:2.5;
+    margin:0;
+    &__title{
+        width:100%;
+    }
+}
+
+.video-figure{
+    margin: 2em 0; 
+    figcaption{
+        width:100%;
+    }
+}
+
+.vid-review{
+    margin-top:.6em;
+    display: flex; 
+    justify-content: space-between;
+    font-size:.8em;
+    &__opinions{
+        display:flex;
+        justify-content: space-between;
+        font-size:.65em;
+        div{
+            margin-left:1.5em;
+        }
+    }
+}
+
+.card-figure{
+    display:flex; 
+    
+}
+
+.card-container{
+    width:57%;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    &__image{
+        width:15vw;
+        object-fit: cover;
+    }
+    &__length{
+        position:absolute;
+        bottom:10%;
+        right:10%;
+        z-index: 1;
+        background-color:#000000;
+        opacity: .75;
+        color:#ffffff;
+        font-size:.9em;
+    }
+}
+
+.card-list{
+    margin: 2em 0; 
+    margin-left:1em;
+    display:flex;
+    flex-direction: column;
+    a{
+        text-decoration: none;
+        color:black;
+    }
+}
+
+.card{
+    width:100%;
+    height:17vh;
+    margin:.5em 0;
+}
+.card-ul{
+    margin-top:0;
+}
+
+.card-ul{
+    height:  13vh;
+    width:100%;
+    
+    &__title{
+        font-size: $cardtitle-font;
+        font-weight:bold;
+    }
+    &__channel{
+        font-size: $cardchannel-font;
+        color:$lightgrey-view;
+        margin: $li-item-margin;
+    }
+    &__views{
+        font-size: $cardviews-font;
+        color:$lightgrey-view;
+        margin: $li-item-margin;
+    }
+}
+
+.video{
+    width:90%;
+}
+
+@media screen and (max-width:1400px){
+    html{
+        font-size:15px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .card-container{
+        &__image{
+            width: 18vw;
+        }
+    }
+
+}
+@media screen and (max-width: 768px){
+    .video-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .margin{
+        width:100%;
+    }
+    .player{
+        width:85vw;
+    }
+
+    .card{
+        min-height:115px;
+        overflow:hidden;
+    }
+    .header__logo{
+        margin-right:2em;
+        max-width: 13vw;
+    }
+
+    .headerRight{
+        margin-left:1em;
+        &__upload{
+            margin-right:1em;
+        }
+    }
+    .card-container{
+        width:40%;
+        min-height:115px;
+        &__image{
+            width: 34vw;
+            
+        }
+    }
+   
+}

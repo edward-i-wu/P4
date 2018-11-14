@@ -1,0 +1,53 @@
+.upload-background{
+    height:100%;
+    width:100%;
+    background-color: #f1f1f1;
+    position: relative;
+
+}
+.uploadForm{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left:3em;
+}
+.uploadImage{
+    background-color: #FFFFFF;
+    position:absolute;
+    top:15%;
+    left:7.75%;
+    border: solid 1px #D4D4D4;
+    ul{
+        line-height:3em;
+        font-weight:bold;    
+        li:first-child{
+            
+            font-size:18px;
+        }
+        li:last-child{
+            color:#888888;
+            font-size:18px;
+        }
+    }
+}
+.description{
+   resize:none;
+   width:40%;
+}
+.pub-button{
+    display:block;
+    border-radius: 2px;   
+    background-color: #0095FF;
+    color:#FFFFFF;
+    border:none;
+    font-size:1em;
+    padding:1em;
+    margin-bottom:2em;
+    span{
+        color:#d4d4d4;
+    }
+}
+
+.title{
+    size:20;
+}

@@ -1,0 +1,42 @@
+$circle-height:5vh;
+$comment-font-size:1em;
+
+
+.commentCrop{
+    clip-path: circle(40%);
+    width:$circle-height;
+    height:$circle-height;
+    position: relative;
+    overflow: hidden;
+    margin-right:2em;
+    
+    &--circleImg{
+        height:$circle-height * 9/10;
+        position:absolute;
+        right:-28%;
+    }
+}
+
+.comment-container{
+    display:flex;
+    margin:1em 0;
+}
+
+.comment-text{
+
+    &__name{
+        display:inline-block;
+        font-weight:bold;
+        font-size: $comment-font-size;
+    }
+    &__date{
+        display:inline-block;
+        color: #888888;
+        font-size:$comment-font-size *9/10;
+        margin-left: 2em;
+    }
+    &__comment{
+        margin-top:.5em;
+        font-size: $comment-font-size;
+    }
+}

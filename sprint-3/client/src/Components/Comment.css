@@ -1,0 +1,41 @@
+.commentCrop {
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
+  width: 5vh;
+  height: 5vh;
+  position: relative;
+  overflow: hidden;
+  margin-right: 2em;
+}
+
+.commentCrop--circleImg {
+  height: 4.5vh;
+  position: absolute;
+  right: -28%;
+}
+
+.comment-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0;
+}
+
+.comment-text__name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.comment-text__date {
+  display: inline-block;
+  color: #888888;
+  font-size: 0.9em;
+  margin-left: 2em;
+}
+
+.comment-text__comment {
+  margin-top: .5em;
+  font-size: 1em;
+}
+/*# sourceMappingURL=Comment.css.map */
